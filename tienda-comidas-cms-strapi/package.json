@@ -1,0 +1,38 @@
+{
+  "name": "tienda-comidas-cms-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Administración Información para página de comidas",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.4.5",
+    "strapi-admin": "3.4.5",
+    "strapi-connector-mongoose": "3.4.5",
+    "strapi-plugin-content-manager": "3.4.5",
+    "strapi-plugin-content-type-builder": "3.4.5",
+    "strapi-plugin-documentation": "^3.4.5",
+    "strapi-plugin-email": "3.4.5",
+    "strapi-plugin-graphql": "3.4.5",
+    "strapi-plugin-upload": "3.4.5",
+    "strapi-plugin-users-permissions": "3.4.5",
+    "strapi-provider-email-sendgrid": "^3.4.5",
+    "strapi-utils": "3.4.5"
+  },
+  "author": {
+    "name": "Santiago Rodriguez"
+  },
+  "strapi": {
+    "uuid": "7dd8aef3-746b-446f-9431-233e7d36bc6f"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

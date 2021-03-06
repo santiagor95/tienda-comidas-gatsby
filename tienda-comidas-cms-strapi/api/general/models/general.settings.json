@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "generals",
+  "info": {
+    "name": "general",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "nombreTienda": {
+      "type": "string"
+    },
+    "celular1": {
+      "type": "string"
+    },
+    "celular2": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "nombreTitular1": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "correoElectronico": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "horarios": {
+      "type": "string"
+    }
+  }
+}

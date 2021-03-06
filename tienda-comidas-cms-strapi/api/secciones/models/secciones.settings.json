@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secciones",
+  "info": {
+    "name": "secciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "codigo": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 20,
+      "minLength": 2
+    },
+    "contenido": {
+      "type": "text"
+    },
+    "contenidoFormato": {
+      "type": "richtext"
+    }
+  }
+}

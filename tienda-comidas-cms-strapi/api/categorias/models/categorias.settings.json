@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "Categorias-Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "categorias",
+      "dominant": true
+    },
+    "orden": {
+      "type": "integer",
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horarios",
+  "info": {
+    "name": "horarios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreDia": {
+      "type": "string"
+    },
+    "horaInicio": {
+      "type": "time"
+    },
+    "horaFin": {
+      "type": "time"
+    },
+    "abierto": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redes_sociales",
+  "info": {
+    "name": "redes sociales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "codigo": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
